@@ -7,7 +7,7 @@ A Nix package for the [Jellium Desktop](https://github.com/andrewrabert/jellium-
 ### Run directly
 
 ```sh
-nix run github:Kalkaro/jellium-flake
+nix run github:Kalkaro/jellium-desktop-flake
 ```
 
 ## Installation
@@ -20,7 +20,7 @@ Add the flake to your inputs and include the package in `environment.systemPacka
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    jellium.url = "github:Kalkaro/jellium-flake";
+    jellium.url = "github:Kalkaro/jellium-desktop-flake";
   };
 
   outputs = { self, nixpkgs, jellium, ... }: {
